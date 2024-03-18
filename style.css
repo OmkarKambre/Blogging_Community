@@ -1,0 +1,14 @@
+#carouselExampleFade .carousel-caption {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20%;
+    animation: backwards;
+    animation: mymove 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes mymove {
+  from {left: -100px;}
+  to {left: 225px;}
+}
