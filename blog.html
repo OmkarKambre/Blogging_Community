@@ -11,16 +11,24 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>Create Blog</title>
+
+    <style>
+        /* Style for the form */
+    </style>
+
 </head>
 
-<body style="background-image: src;">
-    <div class="heading" style="justify-content: center; align-items: center; display: flex;"><h1>CREATE BLOG</h1></div>
+<body>
+    <div class="heading" style="justify-content: center; align-items: center; display: flex;">
+        <h1>CREATE BLOG</h1>
+    </div>
 
 
 
 
-    <div class="container" style="background-image: url(https://img.freepik.com/free-photo/abstract-digital-grid-black-background_53876-97647.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1710720000&semt=ais);">
-        <form>
+    <div class="container"
+        style="background-image: url(https://static.vecteezy.com/system/resources/thumbnails/019/011/154/small/abstract-watercolor-paint-background-beautiful-blue-green-and-yellow-watercolor-splash-design-colorful-plain-green-tones-watercolor-textures-paper-textured-aquarelle-canvas-for-modern-creative-design-vector.jpg ); border: 2px solid black; padding: 10px; height: 100%; background-position: center; background-size: cover; background-repeat: no-repeat;">
+        <form class="my-form">
             <div class="form-group">
                 <label for="title">Title</label>
                 <input type="text" class="form-control" id="title" placeholder="Title">
@@ -33,20 +41,25 @@
                 <label for="category">Category</label>
                 <br>
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: lightgray;">
-                        Select
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <button class="dropdown-item" type="button">Adventure</button>
-                        <button class="dropdown-item" type="button">Facts</button>
-                        <button class="dropdown-item" type="button">Gaming</button>
-                        <button class="dropdown-item" type="button">Other</button>
-                    </div>
-                </div>
-                
+
+                    <select class="form-select" style="padding: 4px;">
+                        <option>Adventure</option>
+                        <option>facts</option>
+                        <option>Gaming</option>
+                        <option>Other</option>
+                    </select>
+                </div><br><br>
+                <label for="content">Content</label>
+                <textarea name="content" id="content" cols="148" rows="10" placeholder="Content"
+                    style="border-radius: 8px;"></textarea>
             </div>
-            <button type="button" style="margin-left: 92%;" class="btn btn-outline-success">Next>></button>
+            <div>
+                <center><button type="submit" class="btn btn-primary">Submit</button>
+                    <button class="btn btn-danger" type="reset">Reset</button>
+                </center>
+
+            </div>
+            <!-- <button type="button" style="margin-left: 92%;" class="btn btn-outline-success">Next>></button> -->
         </form>
     </div>
 
